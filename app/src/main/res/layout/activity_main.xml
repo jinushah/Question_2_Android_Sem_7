@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Do Not Disturb"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        
+        android:text="Customize the feedback for the notification mode with reduced distractions"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Notifications"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Sound"
+                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Play sound for notifications"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swSound"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Vibration"
+                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Short Vibration for notifications"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swVibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="LED"
+                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Turn on the hardware LED for notifications"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swLed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Show Banners"
+                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Notifications banners overlaid over apps"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Show Content"
+                 android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Notification content on banners"
+                />
+        </LinearLayout>
+
+        <Switch
+
+            android:id="@+id/swContent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="409dp"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Show on Lock Screen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:text="Notifications banners on the lock Screen" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swLock"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
